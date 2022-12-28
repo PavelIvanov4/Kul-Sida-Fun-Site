@@ -1,0 +1,198 @@
+body {
+	background : repeating-linear-gradient(to right, lightBlue 0 50px, #BE73FA 50px 100px);
+	background-size : cover;
+	margin : 0;
+}
+
+h2 {
+	background : skyBlue;
+	border : 5px double black;
+	font : 46px Tahoma;
+	width : max-content;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 30px;
+	padding : 10px;
+	cursor : default;
+	animation : logo 10s 3 ease;
+}
+
+h3 {
+	margin-top : 12px;
+	font : 3vw Bebas Neue;
+	color : mintCream;
+	position : relative;
+	left : 1%;
+}
+
+header {
+	position : fixed;
+	display : flex;
+	align-items : stretch;
+	top : 0px;
+	z-index : 1;
+}
+
+nav {
+	background : slateGray;
+	color : beige;
+	border : 3px solid black;
+	font : 27px Arial;
+	width : max-content;
+	padding : 12px;
+	cursor : default;
+	transition : all 0.5s ease;
+}
+
+article {
+	width : 88%;
+	height : 200px;
+	margin : auto;
+	padding : 12px;
+	background : linear-gradient(to bottom right, aqua, blue, navy);
+	border : 5px ridge purple;
+	overflow : hidden;
+	box-shadow : 8px 8px midnightBlue;
+}
+
+button[type=button] {
+	color : orange;
+	background : linear-gradient(black, brown, bisque);
+	font : 40px Tahoma;
+	padding : 8px;
+	border : 5px ridge brown;
+	margin-left : 45%;
+	margin-top : 360px;
+}
+
+.start {
+	background : aquamarine;
+	border : 8px double steelBlue;
+	width : 88%;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 90px;
+	padding : 12px;
+	font : 35px Verdana;
+	line-height : 1.6em;
+	cursor : default;
+}
+
+.art-image {
+	width : 300px;
+	height : 200px;
+	border : 2px solid black;
+	float : left;
+	overflow : hidden;
+}
+
+.art {
+	font : 2.3vw Noto Sans;
+	color : aqua;
+	width : 85vw;
+	position : relative;
+	left : 1%;
+}
+
+#flag1 {
+	width : 100px;
+	height : 60px;
+	position : fixed;
+	top : 0;
+	right : 0;
+	border : 4px ridge gray;
+	z-index : 1;
+}
+
+#flag2 {
+	width : 100px;
+	height : 60px;
+	position : fixed;
+	top : 0;
+	right : 108px;
+	border : 4px ridge gray;
+	z-index : 1;
+}
+
+#orange-id {
+	width : 180px;
+	position : absolute;
+	left : 43%;
+	top : 200px;
+	z-index : 0;
+	display : none;
+	animation : orange-ani 30s infinite ease;
+}
+
+.block1 {
+	display : block;
+}
+
+.block2 {
+	display : none;
+}
+
+.block3 {
+	display : none;
+}
+
+nav:hover {
+	background : #E9E7E0;
+	color : black;
+}
+
+button[type=button]:hover:active {
+	background : linear-gradient(brown, chocolate, bisque);
+	border-color : chocolate;
+}
+
+@keyframes logo {
+      0% {
+      border-color : black;
+  }  20% {
+	  border-color : violet;
+  }  40% {
+	  border-color : lightGreen;
+  }  60% {
+	  border-color : yellow;
+  }  80% {
+	  border-color : blue;
+  } 100% {
+	  border-color : black;
+  }
+}
+
+@keyframes orange-ani {
+	  0% {
+	   top : 200px;
+	   left : 43%;
+   } 20% {
+	   top : 330px;
+	   left : 67%;
+   } 40% {
+	   top : 150px;
+	   left : 70%;
+	   scale : 1;
+   } 60% {
+	   top : 260px;
+	   left : 23%;
+	   scale : 1.5;
+   } 80% {
+	   top : 130px;
+	   left : 20%;
+	   scale : 1;
+   } 100%{
+	   top : 200px;
+	   left : 43%;
+   }
+}
+
+@font-face {
+	font-family : Bebas Neue;
+	src : url('bebasneue.ttf');
+}
+
+@font-face {
+	font-family : Noto Sans;
+	src : url('notosans.ttf');
+}
