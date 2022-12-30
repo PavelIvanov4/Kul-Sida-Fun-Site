@@ -196,3 +196,49 @@ button[type=button]:hover:active {
 	font-family : Noto Sans;
 	src : url('notosans.ttf');
 }
+
+@media screen and (max-width : 800px) {
+nav {
+	font : 4vw Arial;
+}
+
+h2 {
+	font-size : 8vw;
+	margin-top : 100px;
+}
+
+article {
+	height : max-content;
+}
+
+button[type=button] {
+	margin-left : 33%;
+	margin-top : 150px;
+}
+
+.start {
+	font-size : 7vw;
+	width : 83%;
+}
+
+.art-image {
+	width : 40vw;
+	height : 25vw;
+	display : inline-block;
+}
+	
+#flag1 {
+	width : 15vw;
+	height : 10vh;
+}
+ 
+#flag2 {
+	width : 15vw;
+	height : 10vh;
+	right : 16.2vw;
+ }
+ 
+#orange-id {
+	width : 20vw;
+ }
+}
